@@ -17,6 +17,50 @@
             android:layout_width="match_parent">
 
 
+        <EditText
+                android:layout_width="86dp"
+                android:layout_height="79dp"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/leftText"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toStartOf="@+id/imageView" android:layout_marginTop="324dp"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.012"/>
+        <EditText
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/rightText" app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/textView2"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
+        <TextView
+                android:text="result"
+                android:layout_width="93dp"
+                android:layout_height="77dp"
+                android:id="@+id/result"
+                app:layout_constraintStart_toEndOf="@+id/textView2" app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:gravity="center" android:textSize="24sp"/>
+        <ImageView
+                android:layout_width="46dp"
+                android:layout_height="38dp" app:srcCompat="@drawable/ic_add_black_24dp"
+                android:id="@+id/imageView" app:layout_constraintStart_toEndOf="@+id/leftText"
+                app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/rightText"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
+        <TextView
+                android:text="="
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2" android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@+id/rightText" app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toStartOf="@+id/result" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"/>
     </android.support.constraint.ConstraintLayout>
 
 </layout>
